@@ -18,7 +18,13 @@ def index(request):
         print(response.ok)
 
         if response.ok:
-            pass
+            content = response.json()
+            r_city = content["name"]
+            if City.objects.filter(name=r_city):
+                messages.warning(request, "City already exists!")
+            else:
+                City.objects.create(name=r_city)
+                
         else:
             messages.warning(request, "There is no city")
 
