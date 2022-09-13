@@ -33,7 +33,7 @@
 To clone and run this application, you'll need [Git](https://git-scm.com) 
 ```bash
 # Clone this repository
-$ git clone https://github.com/huseyin-aln/Todo-App-D
+$ git clone https://github.com/huseyin-aln/Weather-App-D
 
 # Install dependencies
     $ python -m venv env
@@ -48,7 +48,7 @@ $ git clone https://github.com/huseyin-aln/Todo-App-D
 ```
 
 ## Acknowledgements
-- Made a weather app with django using https://openweathermap.org/ API. 
+- Made a weather app with django using an API. 
 - The city name received from the user is added to the data and data is rendered on the page. 
 - If the name entered by the user exists in the data, the message "City already exists" appears on the page. 
 - When the city on the page is deleted, "City deleted" message appears.
